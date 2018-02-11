@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_marginLeft="20sp"
+    android:layout_marginRight="20sp"
+    tools:context="com.accede.user.testapp.MainScreen">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="0dp"
+        android:layout_weight="0.35"
+        android:textSize="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="CITY" />
+
+    <AutoCompleteTextView
+        android:id="@+id/etcity"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/dropdown"
+        android:editable="false"
+        android:textSize="40dp"
+        android:background="@drawable/custom_edittext"
+        android:gravity="center"
+        android:layout_weight="0.2"
+        >
+
+
+    </AutoCompleteTextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight=".00050"
+        android:paddingLeft="5dp"
+        android:background="@drawable/go"
+        android:id="@+id/textgo"/>
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context=".GooglePlacesActivity">
+
+    <EditText
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:background="@drawable/custom_edittext"
+        android:id="@+id/placeText" />
+
+    <Button
+        android:id="@+id/btnFind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/placeText"
+        android:text="Find"
+        android:textSize="25dp"/>
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/googleMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/placeText"
+        class="com.google.android.gms.maps.SupportMapFragment" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:id="@+id/progressBar"
+        android:layout_above="@+id/googleMap"
+        android:layout_toRightOf="@+id/btnFind"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

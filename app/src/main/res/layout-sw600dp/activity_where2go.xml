@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="5dp"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:paddingTop="5dp"
+    tools:context="com.accede.user.testapp.Where2goActivity"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="City Name: "
+        android:id="@+id/displaycity"
+        android:textSize="60dp"
+        android:layout_marginTop="15dp"/>
+
+
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompletesource"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Source Place"
+        android:layout_marginTop="30dp"
+        android:textSize="45dp"
+        android:background="@drawable/custom_edittext"
+        android:gravity="center"
+        android:ems="13" />
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompletedestiny"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Destination Place"
+        android:layout_marginTop="30dp"
+        android:textSize="45dp"
+        android:background="@drawable/custom_edittext"
+        android:gravity="center"
+        android:ems="13" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="40dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="34dp"
+            android:text="Get Fare"
+            android:id="@+id/btngetfare" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get Route"
+            android:textSize="34dp"
+            android:id="@+id/btngetroute" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Route"
+            android:textSize="34dp"
+            android:id="@+id/btnshowroute"
+            android:singleLine="true"/>
+    </LinearLayout>
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:text="Total Distance: "
+        android:textSize="45dp"
+    android:id="@+id/textdistance"
+    android:layout_marginTop="30dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Total Duration: "
+        android:id="@+id/textduration"
+        android:textSize="45dp"
+        android:layout_marginTop="30dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Total Fare: "
+        android:id="@+id/textfare"
+        android:textSize="45dp"
+        android:layout_marginTop="30dp"/>
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_marginLeft="30sp"
+    android:layout_marginRight="30sp"
+    tools:context="com.accede.user.testapp.MainScreen">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fare Chart"
+        android:textSize="30dp"
+        android:id="@+id/btn_farechart"
+        android:layout_marginTop="15dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Police Control"
+        android:textSize="30dp"
+        android:id="@+id/btn_policecontrol"
+        android:layout_marginTop="15dp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Where To Go"
+        android:textSize="30dp"
+        android:id="@+id/btn_where2go"
+        android:layout_marginTop="15dp"
+      />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nearest Items"
+        android:textSize="30dp"
+        android:id="@+id/btn_nearestitems"
+        android:layout_marginTop="15dp" />
+</LinearLayout>
